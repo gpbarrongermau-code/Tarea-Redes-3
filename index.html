@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación: Conceptos de WAN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; overflow: hidden; }
+        .slide { transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; }
+        .slide.hidden-slide { opacity: 0; pointer-events: none; z-index: 0; transform: scale(0.95); position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .slide.active-slide { opacity: 1; pointer-events: auto; z-index: 10; transform: scale(1); position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .glass-panel { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body class="text-slate-100 h-screen w-screen flex flex-col">
+
+    <!-- Contenedor Principal de Diapositivas -->
+    <div id="presentation-container" class="relative flex-grow overflow-hidden">
+        
+        <!-- Diapositiva 1 -->
+        <div class="slide active-slide bg-slate-900 flex flex-col justify-center items-center p-12 text-center" data-speaker="Expositor 1" data-time="2 min" data-notes="Buenos días a todos, profesor y compañeros. Hoy nuestro equipo presentará el Capítulo 7 de Redes Empresariales, enfocado en los Conceptos de WAN. Analizaremos cómo las redes se expanden más allá de una simple oficina para conectar al mundo.">
+            <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+            <div class="z-10 w-full max-w-5xl">
+                <div class="mb-8 text-blue-400 text-6xl">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
+                    Redes Empresariales
+                </h1>
+                <h2 class="text-3xl font-light mb-10 text-slate-300">Capítulo 7: Conceptos de WAN</h2>
+                <div class="glass-panel p-6 rounded-xl inline-block text-left text-lg">
+                    <p class="mb-2"><i class="fas fa-users text-cyan-400 w-6"></i> <strong>Equipo:</strong> Integrante 1, Integrante 2, Integrante 3</p>
+                    <p class="mb-2"><i class="fas fa-university text-cyan-400 w-6"></i> <strong>Asignatura:</strong> Redes Empresariales</p>
+                    <p><i class="fas fa-calendar-alt text-cyan-400 w-6"></i> <strong>Fecha:</strong> Presentación Universitaria</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 2 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 1" data-time="3 min" data-notes="Al finalizar esta hora y media, todos en la sala serán capaces de entender por qué una empresa necesita una WAN, qué tecnologías existen para implementarla y cómo tomar decisiones de diseño basadas en casos reales.">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-400 border-b border-blue-800 pb-4"><i class="fas fa-bullseye mr-4"></i>Objetivos de Aprendizaje</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-panel p-8 rounded-2xl flex items-start space-x-4">
+                        <div class="bg-blue-500/20 p-4 rounded-full text-blue-400 text-2xl"><i class="fas fa-network-wired"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2">Propósito y Funciones</h3>
+                            <p class="text-slate-400 text-lg">Comprender el propósito fundamental y las operaciones clave de una red WAN empresarial.</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-8 rounded-2xl flex items-start space-x-4">
+                        <div class="bg-cyan-500/20 p-4 rounded-full text-cyan-400 text-2xl"><i class="fas fa-sitemap"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2">Arquitecturas</h3>
+                            <p class="text-slate-400 text-lg">Diferenciar las distintas arquitecturas y topologías de red a gran escala.</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-8 rounded-2xl flex items-start space-x-4">
+                        <div class="bg-purple-500/20 p-4 rounded-full text-purple-400 text-2xl"><i class="fas fa-satellite-dish"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2">Opciones de Conectividad</h3>
+                            <p class="text-slate-400 text-lg">Conocer las tecnologías modernas (fibra, inalámbricas) y tradicionales.</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-8 rounded-2xl flex items-start space-x-4">
+                        <div class="bg-green-500/20 p-4 rounded-full text-green-400 text-2xl"><i class="fas fa-briefcase"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2">Aplicación Práctica</h3>
+                            <p class="text-slate-400 text-lg">Aplicar el conocimiento en la resolución de escenarios empresariales reales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 3 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 1" data-time="5 min" data-notes="Imaginemos una empresa que nace en una pequeña oficina. Todo funciona con un switch y un router (una LAN). Pero, ¿qué pasa cuando abren sucursales en otros países o tienen cientos de empleados en teletrabajo? La LAN ya no es suficiente. Aquí es donde nacen las WAN.">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-blue-400"><i class="fas fa-globe mr-4"></i>Contextualización: ¿Por qué WAN?</h2>
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-full md:w-1/2 space-y-6 text-xl text-slate-300">
+                        <p class="glass-panel p-6 rounded-xl border-l-4 border-l-blue-500">
+                            <strong>Límites de la LAN:</strong> Las empresas necesitan ir más allá de las paredes físicas de una sola oficina o edificio.
+                        </p>
+                        <p class="glass-panel p-6 rounded-xl border-l-4 border-l-cyan-500">
+                            <strong>Fuerza Laboral Distribuida:</strong> Aumento exponencial del teletrabajo y la necesidad de conectar sucursales regionales o internacionales.
+                        </p>
+                        <p class="glass-panel p-6 rounded-xl border-l-4 border-l-purple-500">
+                            <strong>Migración a la Nube:</strong> Alta dependencia de servicios centralizados (AWS, Azure) que requieren conexiones robustas y constantes.
+                        </p>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-center">
+                        <div class="w-full h-80 bg-slate-800 rounded-2xl border-2 border-slate-700 flex items-center justify-center text-slate-500 overflow-hidden relative">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 4 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 1" data-time="5 min" data-notes="La diferencia fundamental no es solo la distancia, sino quién es el dueño de los cables. En una LAN, la empresa compra los switches y cables. En una WAN, alquilamos la infraestructura a un ISP como Telmex o AT&T.">
+            <div class="max-w-5xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-10 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Conceptos Clave: LAN vs. WAN</h2>
+                
+                <div class="overflow-hidden rounded-2xl shadow-2xl glass-panel">
+                    <table class="w-full text-left text-lg">
+                        <thead>
+                            <tr class="bg-slate-800 border-b border-slate-700">
+                                <th class="p-6 text-slate-300 w-1/3 text-center">Característica</th>
+                                <th class="p-6 text-blue-400 border-l border-slate-700 text-center text-2xl w-1/3"><i class="fas fa-building mr-2"></i>LAN</th>
+                                <th class="p-6 text-orange-400 border-l border-slate-700 text-center text-2xl w-1/3"><i class="fas fa-globe mr-2"></i>WAN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-700 hover:bg-slate-800/50 transition">
+                                <td class="p-6 font-semibold">Ubicación Geográfica</td>
+                                <td class="p-6 border-l border-slate-700 text-slate-300 text-center">Localizada (un edificio o campus)</td>
+                                <td class="p-6 border-l border-slate-700 text-slate-300 text-center">Extensa (ciudades, países, global)</td>
+                            </tr>
+                            <tr class="border-b border-slate-700 hover:bg-slate-800/50 transition">
+                                <td class="p-6 font-semibold">Propiedad y Gestión</td>
+                                <td class="p-6 border-l border-slate-700 text-slate-300 text-center">Privada / Interna de la empresa</td>
+                                <td class="p-6 border-l border-slate-700 text-slate-300 text-center">Proveedor de Servicios (ISP)</td>
+                            </tr>
+                            <tr class="hover:bg-slate-800/50 transition">
+                                <td class="p-6 font-semibold">Costo y Velocidad</td>
+                                <td class="p-6 border-l border-slate-700 text-slate-300 text-center">Alto ancho de banda fijo / Costo de equipo inicial</td>
+                                <td class="p-6 border-l border-slate-700 text-slate-300 text-center">Ancho de banda variable / Costos de suscripción (Mensualidad)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 5 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 1" data-time="7 min" data-notes="Al diseñar una WAN, la topología dicta cómo fluye el tráfico. 'Punto a punto' es directo pero limita el crecimiento. 'Hub-and-Spoke' centraliza todo reduciendo costos. Y la 'Malla Completa' ofrece máxima confiabilidad al conectar todos con todos.">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-10 text-blue-400"><i class="fas fa-draw-polygon mr-4"></i>Topologías WAN</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                    
+                    <div class="glass-panel p-6 rounded-xl flex flex-col items-center hover:scale-105 transition duration-300">
+                        <div class="h-32 w-32 mb-4 bg-slate-800 rounded-full flex items-center justify-center border-2 border-blue-500">
+                            <i class="fas fa-link text-4xl text-blue-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-100 mb-2">Punto a Punto</h3>
+                        <p class="text-sm text-slate-400">Conexión dedicada directa entre dos sitios. Simple pero poco escalable.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl flex flex-col items-center hover:scale-105 transition duration-300">
+                        <div class="h-32 w-32 mb-4 bg-slate-800 rounded-full flex items-center justify-center border-2 border-cyan-500">
+                            <i class="fas fa-star text-4xl text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-100 mb-2">Hub-and-Spoke</h3>
+                        <p class="text-sm text-slate-400">Sitios remotos (Spokes) se conectan a un sitio central (Hub). Económico y centralizado.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl flex flex-col items-center hover:scale-105 transition duration-300">
+                        <div class="h-32 w-32 mb-4 bg-slate-800 rounded-full flex items-center justify-center border-2 border-purple-500">
+                            <i class="fas fa-dharmachakra text-4xl text-purple-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-100 mb-2">Malla Completa</h3>
+                        <p class="text-sm text-slate-400">Todos los nodos se conectan entre sí. Máxima redundancia, pero muy costosa.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl flex flex-col items-center hover:scale-105 transition duration-300">
+                        <div class="h-32 w-32 mb-4 bg-slate-800 rounded-full flex items-center justify-center border-2 border-green-500">
+                            <i class="fas fa-project-diagram text-4xl text-green-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-100 mb-2">Doble Conexión</h3>
+                        <p class="text-sm text-slate-400">(Dual-Homed). Cada sitio se conecta a dos Hubs para garantizar alta disponibilidad.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 6 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 1" data-time="7 min" data-notes="En el mundo WAN, debemos saber a quién culpar cuando falla el internet. El 'Punto de Demarcación' es clave: de la pared hacia adentro es problema de la empresa (CPE, DTE), de la pared hacia afuera es problema del proveedor (DCE, Red del ISP).">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-blue-400"><i class="fas fa-plug mr-4"></i>Terminología y Componentes WAN</h2>
+                
+                <div class="flex flex-col lg:flex-row gap-10 mt-8">
+                    <div class="w-full lg:w-1/3 space-y-6">
+                        <div class="glass-panel p-5 rounded-lg border-l-4 border-emerald-500">
+                            <h3 class="text-xl font-bold text-emerald-400 mb-1">CPE</h3>
+                            <p class="text-sm text-slate-300">Customer Premises Equipment. Dispositivos físicos ubicados en las instalaciones del cliente (routers, switches).</p>
+                        </div>
+                        <div class="glass-panel p-5 rounded-lg border-l-4 border-blue-500">
+                            <h3 class="text-xl font-bold text-blue-400 mb-1">DCE / DTE</h3>
+                            <p class="text-sm text-slate-300"><strong>DCE:</strong> Equipo del proveedor que proporciona el reloj (ej. Módem). <br><strong>DTE:</strong> Equipo del cliente que recibe los datos (ej. Router).</p>
+                        </div>
+                        <div class="glass-panel p-5 rounded-lg border-l-4 border-red-500">
+                            <h3 class="text-xl font-bold text-red-400 mb-1">Punto de Demarcación</h3>
+                            <p class="text-sm text-slate-300">Línea física y legal donde termina la responsabilidad del proveedor de servicios y comienza la del cliente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full lg:w-2/3 glass-panel rounded-2xl flex items-center justify-center p-8 relative overflow-hidden">
+                        <div class="text-center">
+                            <div class="w-full max-w-md mx-auto rounded overflow-hidden shadow-lg border border-slate-600 mb-4">
+                                
+                            </div>
+                            <div class="flex justify-between items-center w-full max-w-lg mx-auto mt-8 border-t-2 border-dashed border-red-500 pt-4 relative">
+                                <span class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs px-2 py-1 rounded">Punto de Demarcación</span>
+                                <div class="text-emerald-400"><i class="fas fa-building text-3xl mb-2 block"></i>Red del Cliente (CPE)</div>
+                                <div class="text-blue-400"><i class="fas fa-cloud text-3xl mb-2 block"></i>Red del Proveedor (ISP)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 7 -->
+        <div class="slide hidden-slide bg-gradient-to-br from-blue-900 to-slate-900 flex flex-col justify-center items-center p-12 text-center" data-speaker="Expositor 1" data-time="1 min" data-notes="Con esto cubrimos la arquitectura básica y quién es responsable de qué. Pero, ¿qué cables o señales invisibles conectan realmente estos equipos hoy en día? Para hablar de las tecnologías de conexión, los dejo con mi compañero Expositor 2.">
+            <h2 class="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500 mb-6">
+                Tecnologías de Conectividad WAN
+            </h2>
+            <p class="text-2xl text-slate-300 mt-4 max-w-2xl font-light">
+                Transición de arquitectura física a tecnologías de transporte lógicas y medios de transmisión actuales.
+            </p>
+            <div class="mt-12 animate-bounce">
+                <i class="fas fa-chevron-down text-4xl text-cyan-500"></i>
+            </div>
+        </div>
+
+        <!-- Diapositiva 8 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 2" data-time="5 min" data-notes="Gracias Expositor 1. Históricamente, las WAN dependían de conexiones seriales lentas y costosas. Hoy, la evolución nos da dos grandes caminos: redes privadas dedicadas o la infraestructura pública (Internet).">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-400"><i class="fas fa-history mr-4"></i>Evolución de la Conectividad</h2>
+                
+                <div class="relative w-full h-1 bg-slate-700 mt-20 mb-16">
+                    <div class="absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-4 rounded-full bg-slate-500"></div>
+                    <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.5)]"></div>
+                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-6 h-6 rounded-full bg-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.8)]"></div>
+                    
+                    <div class="absolute -top-16 left-0 transform -translate-x-4">
+                        <div class="text-slate-500 font-bold mb-1"><i class="fas fa-tty"></i> Legado</div>
+                        <div class="text-xs text-slate-600 bg-slate-800 p-2 rounded">Cobre / Serial<br>T1/E1, Frame Relay</div>
+                    </div>
+                    
+                    <div class="absolute -top-16 left-1/2 transform -translate-x-1/2 text-center">
+                        <div class="text-blue-400 font-bold mb-1"><i class="fas fa-shield-alt"></i> Redes Privadas Modernas</div>
+                        <div class="text-xs text-slate-300 bg-blue-900/40 p-2 rounded border border-blue-800">Fibra Óptica<br>Ethernet WAN, MPLS</div>
+                    </div>
+                    
+                    <div class="absolute -top-16 right-0 transform translate-x-4 text-right">
+                        <div class="text-cyan-400 font-bold mb-1"><i class="fas fa-globe"></i> Redes Públicas / Nube</div>
+                        <div class="text-xs text-slate-200 bg-cyan-900/40 p-2 rounded border border-cyan-800">Internet de Banda Ancha<br>VPN, FTTH, 4G/5G</div>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-xl text-center text-lg mt-12 text-slate-300 max-w-3xl mx-auto border-t-4 border-blue-500">
+                    La decisión moderna se resume en: <br>
+                    <strong>¿Pagar más por una red privada con garantías?</strong> vs. <strong>¿Usar el Internet público y añadir seguridad virtual?</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 9 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 2" data-time="8 min" data-notes="Si una empresa necesita garantía absoluta de que su videollamada no se cortará, contrata MPLS. MPLS lee 'etiquetas' cortas en lugar de direcciones IP, lo que hace el tráfico muy rápido. Ethernet WAN permite que sucursales actúen como si estuvieran en la misma LAN.">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-10 text-blue-400"><i class="fas fa-lock mr-4"></i>Tecnologías WAN Privadas</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-panel p-8 rounded-2xl hover:bg-slate-800 transition relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition text-8xl text-cyan-500"><i class="fas fa-network-wired"></i></div>
+                        <h3 class="text-3xl font-bold text-cyan-400 mb-4">Ethernet WAN</h3>
+                        <p class="text-slate-300 text-lg mb-4">Conocida como <strong>Metro Ethernet (MetroE)</strong>.</p>
+                        <ul class="list-disc list-inside text-slate-400 space-y-2">
+                            <li>Extiende el protocolo LAN (Ethernet) a través de la red del proveedor.</li>
+                            <li>Reduce costos y complejidad administrativa.</li>
+                            <li>Ideal para conectar sedes dentro de una misma ciudad.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glass-panel p-8 rounded-2xl hover:bg-slate-800 transition relative overflow-hidden group border-l-4 border-purple-500">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition text-8xl text-purple-500"><i class="fas fa-tags"></i></div>
+                        <h3 class="text-3xl font-bold text-purple-400 mb-4">MPLS</h3>
+                        <p class="text-slate-300 text-lg mb-4">Multiprotocol Label Switching.</p>
+                        <ul class="list-disc list-inside text-slate-400 space-y-2">
+                            <li>Enruta paquetes basados en <strong>etiquetas (Labels)</strong> en lugar de largas direcciones IP.</li>
+                            <li>Soporta IPv4, IPv6, Ethernet, y protocolos antiguos.</li>
+                            <li><strong>Ventaja Principal:</strong> Excelentes garantías de Calidad de Servicio (QoS) para Voz y Video.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 10 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 2" data-time="8 min" data-notes="La alternativa a MPLS es usar el Internet. Es económico y rápido. ¿El problema? Es inseguro. Para solucionarlo, usamos VPNs. Una VPN crea un túnel encriptado: Site-to-Site para sucursales, y Acceso Remoto para trabajadores.">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-cyan-400"><i class="fas fa-wifi mr-4"></i>WAN Públicas y VPNs</h2>
+                
+                <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+                    <div class="w-full lg:w-1/3 glass-panel p-6 rounded-xl flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-slate-200 mb-4 border-b border-slate-700 pb-2">Conectividad de Banda Ancha</h3>
+                        <ul class="space-y-3 text-slate-400">
+                            <li><i class="fas fa-bolt text-yellow-400 w-6"></i> Fibra (FTTH)</li>
+                            <li><i class="fas fa-tv text-slate-300 w-6"></i> Cable coaxial</li>
+                            <li><i class="fas fa-phone-alt text-green-400 w-6"></i> DSL (Obsoleto)</li>
+                            <li><i class="fas fa-signal text-blue-400 w-6"></i> Celular (4G/5G)</li>
+                        </ul>
+                        <div class="mt-6 bg-red-900/30 border border-red-500/50 p-4 rounded text-red-300 text-sm">
+                            <i class="fas fa-exclamation-triangle mr-2"></i> El problema: Falta de privacidad nativa.
+                        </div>
+                    </div>
+                    
+                    <div class="w-full lg:w-2/3 glass-panel p-8 rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 border border-blue-500/30">
+                        <h3 class="text-3xl font-bold text-blue-400 mb-2">La Solución: VPN</h3>
+                        <p class="text-slate-300 mb-6">Virtual Private Network. Crea un "túnel" cifrado a través de Internet.</p>
+                        
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="bg-slate-900/80 p-5 rounded-lg border border-slate-700">
+                                <h4 class="text-xl font-bold text-emerald-400 mb-2"><i class="fas fa-building mr-2"></i>Site-to-Site</h4>
+                                <p class="text-sm text-slate-400">Conecta redes completas. Router a Router. Transparente para los usuarios de la oficina.</p>
+                            </div>
+                            <div class="bg-slate-900/80 p-5 rounded-lg border border-slate-700">
+                                <h4 class="text-xl font-bold text-purple-400 mb-2"><i class="fas fa-laptop-house mr-2"></i>Acceso Remoto</h4>
+                                <p class="text-sm text-slate-400">Conecta hosts individuales de forma segura (Ej. teletrabajador usando software VPN cliente).</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 w-full h-32 text-center text-slate-500 text-sm bg-slate-950 rounded overflow-hidden flex items-center justify-center">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 11 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 2" data-time="8 min" data-notes="Un banco no usa una sola tecnología. Para cajeros usa MPLS. Para el gerente en casa, VPN. Y si falla la fibra, tienen un chip 5G de respaldo. A esto le llamamos diseño WAN Híbrido.">
+            <div class="max-w-6xl mx-auto w-full text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-emerald-400"><i class="fas fa-layer-group mr-4"></i>Caso Real: Arquitectura Híbrida</h2>
+                <p class="text-xl text-slate-300 mb-10 max-w-3xl mx-auto">Corporativo Bancario combinando múltiples tecnologías para balancear <strong>Seguridad, Disponibilidad y Costos</strong>.</p>
+                
+                <div class="glass-panel p-8 rounded-2xl inline-block text-left w-full max-w-4xl relative">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        
+                        <div class="bg-slate-800 p-6 rounded-xl border-t-4 border-purple-500">
+                            <div class="text-center mb-4"><i class="fas fa-university text-5xl text-purple-400"></i></div>
+                            <h3 class="text-lg font-bold text-center mb-2">Sede Central</h3>
+                            <p class="text-sm text-slate-400 text-center mb-2">Datos muy sensibles, transacciones core.</p>
+                            <div class="bg-purple-900/50 text-purple-200 text-xs py-1 px-2 rounded text-center">Enlace Principal: MPLS Dedicado</div>
+                        </div>
+
+                        <div class="flex flex-col justify-center items-center space-y-4">
+                            <i class="fas fa-exchange-alt text-3xl text-slate-500"></i>
+                            <div class="bg-blue-900/30 p-3 rounded-full border border-blue-500">
+                                <i class="fas fa-cloud text-blue-400 text-3xl"></i>
+                            </div>
+                            <i class="fas fa-exchange-alt text-3xl text-slate-500"></i>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="bg-slate-800 p-4 rounded-xl border-t-4 border-cyan-500">
+                                <h3 class="font-bold mb-1"><i class="fas fa-store text-cyan-400 mr-2"></i>Sucursal Menor</h3>
+                                <div class="text-xs text-slate-400 space-y-1">
+                                    <p>Principal: VPN sobre Fibra (Internet)</p>
+                                    <p class="text-yellow-400">Respaldo: Enlace Celular 5G</p>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl border-t-4 border-emerald-500">
+                                <h3 class="font-bold mb-1"><i class="fas fa-user-tie text-emerald-400 mr-2"></i>Teletrabajadores</h3>
+                                <p class="text-xs text-slate-400">Conexión vía Cliente VPN de Acceso Remoto desde cualquier red Wi-Fi pública.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 12 -->
+        <div class="slide hidden-slide bg-gradient-to-br from-slate-900 to-indigo-900 flex flex-col justify-center items-center p-12 text-center" data-speaker="Expositor 2" data-time="1 min" data-notes="Administrar todas estas conexiones distintas en una red híbrida puede ser un dolor de cabeza. ¿Cómo automatizamos esto? Para hablar del futuro y la práctica, los dejo con el Expositor 3.">
+            <h2 class="text-5xl md:text-7xl font-extrabold text-white mb-6">
+                El Futuro y Práctica de las WAN
+            </h2>
+            <div class="h-1 w-32 bg-indigo-500 mx-auto mb-6"></div>
+            <p class="text-2xl text-indigo-200 mt-4 max-w-2xl font-light">
+                Automatización, SD-WAN y resolución de casos prácticos.
+            </p>
+            <div class="mt-12 animate-pulse">
+                <i class="fas fa-arrow-right text-4xl text-indigo-400"></i>
+            </div>
+        </div>
+
+        <!-- Diapositiva 13 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 3" data-time="6 min" data-notes="Gracias. Hoy en día, el mundo se mueve hacia SD-WAN. Usamos un panel de control centralizado basado en software. SD-WAN es inteligente: manda a Netflix por la red barata y a Zoom por la línea dedicada cara.">
+            <div class="max-w-6xl mx-auto w-full">
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="text-4xl md:text-5xl font-bold text-indigo-400"><i class="fas fa-brain mr-4"></i>La Revolución SD-WAN</h2>
+                    <span class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-full font-bold animate-pulse">Tendencia Actual</span>
+                </div>
+                
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <div class="glass-panel p-6 rounded-xl">
+                            <h3 class="text-2xl font-bold text-white mb-2">Software-Defined WAN</h3>
+                            <p class="text-slate-400">Separa el plano de control (el cerebro) del plano de datos (los cables).</p>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start bg-slate-800 p-4 rounded-lg">
+                                <i class="fas fa-desktop text-2xl text-blue-400 mr-4 mt-1"></i>
+                                <div>
+                                    <strong class="text-slate-200 block">Gestión Centralizada</strong>
+                                    <span class="text-sm text-slate-400">Se configuran todos los routers de las sucursales desde un único dashboard (Controlador).</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start bg-slate-800 p-4 rounded-lg">
+                                <i class="fas fa-route text-2xl text-emerald-400 mr-4 mt-1"></i>
+                                <div>
+                                    <strong class="text-slate-200 block">Enrutamiento por Aplicación</strong>
+                                    <span class="text-sm text-slate-400">Toma decisiones en tiempo real: Zoom por MPLS, YouTube por internet barato.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="bg-indigo-900/40 border border-indigo-500 p-4 rounded-xl text-indigo-200 font-semibold text-center">
+                            Dato: Más del 70% de las empresas Fortune 500 ya migraron a SD-WAN por ahorro de costos.
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-1/2 flex items-center justify-center">
+                        <div class="w-full h-full min-h-[300px] glass-panel rounded-2xl flex flex-col items-center justify-center border-2 border-indigo-500/50 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-indigo-900/20 z-10 pointer-events-none"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 14 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center items-center p-12 text-center" data-speaker="Expositor 3" data-time="8 min" data-notes="¡Es hora de despertar! Saquen sus teléfonos móviles, por favor. Vamos a hacer un rápido Kahoot de 5 preguntas para ver quién prestó más atención. El ganador se lleva un aplauso.">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 mb-8">
+                ¡Actividad Interactiva!
+            </h2>
+            <p class="text-2xl text-slate-300 mb-10">Prepara tu smartphone para evaluar lo aprendido.</p>
+            
+            <div class="bg-white p-2 rounded-3xl shadow-[0_0_30px_rgba(250,204,21,0.3)] inline-block mb-8">
+                <div class="w-48 h-48 bg-slate-200 rounded-2xl border-4 border-slate-300 flex items-center justify-center overflow-hidden">
+                    
+                </div>
+            </div>
+            
+            <div class="glass-panel px-8 py-4 rounded-full text-xl font-bold border border-yellow-500 text-yellow-400">
+                PIN de Juego: <span class="tracking-widest text-white text-3xl ml-2 font-mono">123 4567</span>
+            </div>
+        </div>
+
+        <!-- Diapositiva 15 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 3" data-time="5 min" data-notes="Me gustaría escuchar su opinión. Con el internet satelital como Starlink y la expansión del 5G, ¿creen que las empresas dejarán de instalar fibra óptica en el futuro? (Esperar participación).">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-12 text-cyan-400 text-center"><i class="fas fa-comments mr-4"></i>Preguntas de Análisis y Debate</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="glass-panel p-10 rounded-2xl relative">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-cyan-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-slate-900">1</div>
+                        <h3 class="text-2xl font-bold text-center mt-4 mb-4 text-slate-200">El Destino de MPLS</h3>
+                        <p class="text-slate-400 text-lg text-center">Con la adopción masiva y el abaratamiento de SD-WAN gestionando conexiones de internet públicas (Banda ancha)...</p>
+                        <p class="text-cyan-400 text-xl font-semibold text-center mt-6 italic">"¿Creen que la tecnología MPLS terminará desapareciendo en la próxima década?"</p>
+                    </div>
+                    
+                    <div class="glass-panel p-10 rounded-2xl relative border-t border-purple-500/30">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold border-4 border-slate-900">2</div>
+                        <div class="text-center mb-4 text-3xl space-x-4 text-purple-400">
+                            <i class="fas fa-satellite"></i> <i class="fas fa-broadcast-tower"></i> <i class="fas fa-slash text-slate-600"></i> <i class="fas fa-network-wired text-slate-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4 text-slate-200">El Impacto Inalámbrico</h3>
+                        <p class="text-slate-400 text-lg text-center">Con el avance del Internet Satelital de baja órbita (ej. Starlink) y el 5G en zonas rurales...</p>
+                        <p class="text-purple-400 text-xl font-semibold text-center mt-6 italic">"¿Dejarán las empresas de invertir en costosos tendidos de fibra óptica subterránea?"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 16 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 3" data-time="8 min" data-notes="Vamos a aplicar esto. Tenemos a TechCorp con presupuesto bajo y 5 nuevas tiendas en otro país. ¿Qué recomendamos? Exacto, contratar banda ancha comercial y establecer un túnel VPN Site-to-Site.">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl font-bold mb-8 text-emerald-400"><i class="fas fa-clipboard-check mr-4"></i>Caso Práctico: "La Expansión Retail"</h2>
+                
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-600 shadow-xl mb-8">
+                    <h3 class="text-2xl font-bold text-slate-100 mb-4 border-b border-slate-700 pb-2">El Reto Empresarial</h3>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="w-full md:w-2/3 text-lg text-slate-300">
+                            <p class="mb-4">La empresa "TechCorp", con sede principal en México, acaba de abrir 5 tiendas de retail pequeñas en Colombia.</p>
+                            <ul class="list-none space-y-2">
+                                <li><i class="fas fa-times-circle text-red-400 mr-2"></i> <strong>Limitación:</strong> Tienen un presupuesto bajo (no pueden pagar MPLS internacional).</li>
+                                <li><i class="fas fa-check-circle text-green-400 mr-2"></i> <strong>Requisito:</strong> Necesitan conectar las bases de datos de inventario y terminales de punto de venta (tarjetas) de forma completamente segura hacia la sede en México.</li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-1/3 flex items-center justify-center bg-slate-900 rounded-xl overflow-hidden border border-slate-700">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-panel p-6 rounded-xl border-l-8 border-emerald-500">
+                    <h3 class="text-xl font-bold text-emerald-400 mb-2">Solución a debatir en clase:</h3>
+                    <p class="text-lg text-slate-200">¿Qué tecnología de capa física y qué tecnología de seguridad deberían implementar en esas 5 tiendas?</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 17 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 3" data-time="2 min" data-notes="Para concluir: Las WAN rompen barreras geográficas. Las empresas deben elegir entre redes dedicadas o públicas con VPN. Y finalmente, el futuro está en la automatización SD-WAN.">
+            <div class="max-w-5xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-400 text-center"><i class="fas fa-list-ul mr-4"></i>Conclusiones Generales</h2>
+                
+                <div class="space-y-6">
+                    <div class="glass-panel p-6 rounded-xl flex items-center hover:translate-x-4 transition duration-300">
+                        <div class="w-16 h-16 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-400 text-2xl mr-6 border border-blue-500 shrink-0"><i class="fas fa-globe"></i></div>
+                        <p class="text-xl text-slate-200">Las redes WAN son el <strong>sistema nervioso</strong> de la economía global, permitiendo la escalabilidad geográfica.</p>
+                    </div>
+                    
+                    <div class="glass-panel p-6 rounded-xl flex items-center hover:translate-x-4 transition duration-300">
+                        <div class="w-16 h-16 rounded-full bg-cyan-900/50 flex items-center justify-center text-cyan-400 text-2xl mr-6 border border-cyan-500 shrink-0"><i class="fas fa-balance-scale"></i></div>
+                        <p class="text-xl text-slate-200">No hay una solución "única". El diseño correcto <strong>depende del equilibrio</strong> entre costo, seguridad y necesidades de la aplicación.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl flex items-center hover:translate-x-4 transition duration-300">
+                        <div class="w-16 h-16 rounded-full bg-purple-900/50 flex items-center justify-center text-purple-400 text-2xl mr-6 border border-purple-500 shrink-0"><i class="fas fa-shield-alt"></i></div>
+                        <p class="text-xl text-slate-200">En infraestructuras públicas (Internet), el uso de <strong>túneles VPN no es opcional</strong>, es obligatorio para la privacidad.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl flex items-center hover:translate-x-4 transition duration-300">
+                        <div class="w-16 h-16 rounded-full bg-emerald-900/50 flex items-center justify-center text-emerald-400 text-2xl mr-6 border border-emerald-500 shrink-0"><i class="fas fa-magic"></i></div>
+                        <p class="text-xl text-slate-200">El futuro es el software. <strong>SD-WAN</strong> es el estándar actual para automatizar y abaratar la gestión de redes híbridas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 18 -->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center items-center p-12 text-center" data-speaker="Equipo" data-time="1 min" data-notes="De parte de todo el equipo, les agradecemos mucho su tiempo y participación. Dejamos estos minutos finales para cualquier pregunta o comentario.">
+            <h2 class="text-6xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-10">
+                ¡GRACIAS!
+            </h2>
+            <div class="h-1 w-48 bg-slate-700 mx-auto mb-10"></div>
+            
+            <h3 class="text-3xl font-semibold text-slate-200 mb-6">Sesión de Preguntas y Respuestas</h3>
+            <p class="text-xl text-slate-400 mb-12">¿Dudas, comentarios o aportes?</p>
+            
+            <div class="flex justify-center space-x-8 text-3xl text-slate-500">
+                <i class="fab fa-cisco hover:text-blue-500 transition cursor-pointer" title="Referencia: Cisco Networking Academy"></i>
+                <i class="fas fa-book hover:text-cyan-500 transition cursor-pointer" title="Bibliografía: CCNA v7"></i>
+                <i class="fas fa-envelope hover:text-white transition cursor-pointer" title="Contacto del equipo"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Barra de Controles (Abajo) -->
+    <div class="bg-slate-950 border-t border-slate-800 p-4 flex justify-between items-center z-50 relative">
+        <div class="text-slate-400 text-sm font-semibold flex items-center gap-4">
+            <span id="slide-counter">Diapositiva 1 / 18</span>
+            <button id="toggle-notes" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded text-xs transition duration-300 font-bold">
+                <i class="fas fa-comment-dots mr-1"></i> Mostrar Guion
+            </button>
+        </div>
+        
+        <!-- Barra de Progreso Central -->
+        <div class="w-1/3 h-2 bg-slate-800 rounded-full overflow-hidden hidden md:block">
+            <div id="progress-bar" class="h-full bg-blue-500 transition-all duration-300" style="width: 5.5%;"></div>
+        </div>
+
+        <div class="flex space-x-2">
+            <button id="btn-prev" class="bg-slate-800 hover:bg-slate-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition disabled:opacity-50 disabled:cursor-not-allowed">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="bg-slate-800 hover:bg-slate-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition disabled:opacity-50 disabled:cursor-not-allowed">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Panel de Notas del Expositor (Guion) -->
+    <!-- Se utilizaron clases Tailwind (opacity-0, translate-y-10, pointer-events-none) en lugar de CSS personalizado -->
+    <div id="speaker-notes" class="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-11/12 md:w-2/3 lg:w-1/2 bg-slate-800 border-2 border-blue-500 rounded-xl shadow-2xl z-40 p-6 transition-all duration-300 opacity-0 pointer-events-none translate-y-10">
+        <div class="flex justify-between items-center border-b border-slate-600 pb-2 mb-4">
+            <div class="flex items-center space-x-4">
+                <span id="note-speaker" class="bg-blue-600 text-xs px-2 py-1 rounded text-white font-bold uppercase">Expositor X</span>
+                <span id="note-time" class="text-slate-400 text-sm"><i class="far fa-clock"></i> 0 min</span>
+            </div>
+            <button id="close-notes" class="text-slate-400 hover:text-white transition"><i class="fas fa-times text-xl"></i></button>
+        </div>
+        <p id="note-text" class="text-lg text-slate-200 leading-relaxed font-light italic">
+            Aquí aparecerá el guion de apoyo para el expositor.
+        </p>
+    </div>
+
+    <!-- Lógica de la Presentación -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const btnPrev = document.getElementById('btn-prev');
+            const btnNext = document.getElementById('btn-next');
+            const counter = document.getElementById('slide-counter');
+            const progressBar = document.getElementById('progress-bar');
+            
+            const toggleNotesBtn = document.getElementById('toggle-notes');
+            const closeNotesBtn = document.getElementById('close-notes');
+            const speakerNotesPanel = document.getElementById('speaker-notes');
+            
+            const noteSpeaker = document.getElementById('note-speaker');
+            const noteTime = document.getElementById('note-time');
+            const noteText = document.getElementById('note-text');
+
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            let notesVisible = false;
+
+            function updatePresentation() {
+                // Actualizar clases de diapositivas
+                slides.forEach((slide, index) => {
+                    if (index === currentSlide) {
+                        slide.classList.remove('hidden-slide');
+                        slide.classList.add('active-slide');
+                    } else {
+                        slide.classList.remove('active-slide');
+                        slide.classList.add('hidden-slide');
+                    }
+                });
+
+                // Actualizar Controles
+                btnPrev.disabled = currentSlide === 0;
+                btnNext.disabled = currentSlide === totalSlides - 1;
+                counter.innerText = `Diapositiva ${currentSlide + 1} / ${totalSlides}`;
+                progressBar.style.width = `${((currentSlide + 1) / totalSlides) * 100}%`;
+
+                // Actualizar Notas del Expositor (Texto)
+                const activeSlide = slides[currentSlide];
+                noteSpeaker.innerText = activeSlide.getAttribute('data-speaker') || 'General';
+                noteTime.innerHTML = `<i class="far fa-clock"></i> ${activeSlide.getAttribute('data-time') || '--'}`;
+                noteText.innerText = `"${activeSlide.getAttribute('data-notes') || 'No hay notas para esta diapositiva.'}"`;
+            }
+
+            function nextSlide() {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    updatePresentation();
+                }
+            }
+
+            function prevSlide() {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updatePresentation();
+                }
+            }
+
+            // Alternar estado visible/oculto del panel y botones
+            function toggleNotesPanel() {
+                notesVisible = !notesVisible;
+                if (notesVisible) {
+                    // Mostrar panel
+                    speakerNotesPanel.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10');
+                    speakerNotesPanel.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                    
+                    // Actualizar Botón a "Ocultar" (estado Rojo)
+                    toggleNotesBtn.innerHTML = '<i class="fas fa-comment-slash mr-1"></i> Ocultar Guion';
+                    toggleNotesBtn.classList.replace('bg-blue-600', 'bg-red-600');
+                    toggleNotesBtn.classList.replace('hover:bg-blue-500', 'hover:bg-red-500');
+                } else {
+                    // Ocultar panel
+                    speakerNotesPanel.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10');
+                    speakerNotesPanel.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                    
+                    // Actualizar Botón a "Mostrar" (estado Azul)
+                    toggleNotesBtn.innerHTML = '<i class="fas fa-comment-dots mr-1"></i> Mostrar Guion';
+                    toggleNotesBtn.classList.replace('bg-red-600', 'bg-blue-600');
+                    toggleNotesBtn.classList.replace('hover:bg-red-500', 'hover:bg-blue-500');
+                }
+            }
+
+            // Event Listeners Botones de navegación
+            btnNext.addEventListener('click', nextSlide);
+            btnPrev.addEventListener('click', prevSlide);
+
+            // Event Listeners Teclado
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight' || e.key === ' ') {
+                    nextSlide();
+                } else if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                }
+            });
+
+            // Event Listeners Panel de Notas
+            toggleNotesBtn.addEventListener('click', toggleNotesPanel);
+            
+            closeNotesBtn.addEventListener('click', () => {
+                if (notesVisible) toggleNotesPanel();
+            });
+
+            // Inicializar la primera vez
+            updatePresentation();
+        });
+    </script>
+</body>
+</html>
