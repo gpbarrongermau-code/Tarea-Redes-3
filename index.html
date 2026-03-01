@@ -93,8 +93,8 @@
                         </p>
                     </div>
                     <div class="w-full md:w-1/2 flex justify-center">
-                        <div class="w-full h-80 bg-slate-800 rounded-2xl border-2 border-slate-700 flex items-center justify-center text-slate-500 overflow-hidden relative">
-                            
+                        <div class="w-full h-80 glass-panel rounded-2xl border border-slate-700 flex items-center justify-center overflow-hidden relative shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop" alt="Red Global" class="w-full h-full object-cover opacity-70 hover:opacity-100 transition duration-500">
                         </div>
                     </div>
                 </div>
@@ -201,14 +201,14 @@
                     </div>
                     
                     <div class="w-full lg:w-2/3 glass-panel rounded-2xl flex items-center justify-center p-8 relative overflow-hidden">
-                        <div class="text-center">
-                            <div class="w-full max-w-md mx-auto rounded overflow-hidden shadow-lg border border-slate-600 mb-4">
-                                
+                        <div class="text-center w-full">
+                            <div class="w-full mx-auto rounded-xl overflow-hidden shadow-lg border border-slate-700 mb-4 bg-slate-900 h-48 flex items-center justify-center relative">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1000&auto=format&fit=crop" alt="Equipos y Cables de Red" class="w-full h-full object-cover opacity-70">
                             </div>
-                            <div class="flex justify-between items-center w-full max-w-lg mx-auto mt-8 border-t-2 border-dashed border-red-500 pt-4 relative">
-                                <span class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs px-2 py-1 rounded">Punto de Demarcación</span>
-                                <div class="text-emerald-400"><i class="fas fa-building text-3xl mb-2 block"></i>Red del Cliente (CPE)</div>
-                                <div class="text-blue-400"><i class="fas fa-cloud text-3xl mb-2 block"></i>Red del Proveedor (ISP)</div>
+                            <div class="flex justify-between items-center w-full max-w-lg mx-auto mt-4 border-t-2 border-dashed border-red-500 pt-4 relative">
+                                <span class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs px-2 py-1 rounded shadow">Límite Legal</span>
+                                <div class="text-emerald-400"><i class="fas fa-building text-3xl mb-2 block"></i>Red del Cliente</div>
+                                <div class="text-blue-400"><i class="fas fa-cloud text-3xl mb-2 block"></i>Red del Proveedor</div>
                             </div>
                         </div>
                     </div>
@@ -312,23 +312,28 @@
                         </div>
                     </div>
                     
-                    <div class="w-full lg:w-2/3 glass-panel p-8 rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 border border-blue-500/30">
-                        <h3 class="text-3xl font-bold text-blue-400 mb-2">La Solución: VPN</h3>
-                        <p class="text-slate-300 mb-6">Virtual Private Network. Crea un "túnel" cifrado a través de Internet.</p>
-                        
-                        <div class="grid grid-cols-2 gap-6">
-                            <div class="bg-slate-900/80 p-5 rounded-lg border border-slate-700">
-                                <h4 class="text-xl font-bold text-emerald-400 mb-2"><i class="fas fa-building mr-2"></i>Site-to-Site</h4>
-                                <p class="text-sm text-slate-400">Conecta redes completas. Router a Router. Transparente para los usuarios de la oficina.</p>
-                            </div>
-                            <div class="bg-slate-900/80 p-5 rounded-lg border border-slate-700">
-                                <h4 class="text-xl font-bold text-purple-400 mb-2"><i class="fas fa-laptop-house mr-2"></i>Acceso Remoto</h4>
-                                <p class="text-sm text-slate-400">Conecta hosts individuales de forma segura (Ej. teletrabajador usando software VPN cliente).</p>
+                    <div class="w-full lg:w-2/3 glass-panel p-8 rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 border border-blue-500/30 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-3xl font-bold text-blue-400 mb-2">La Solución: VPN</h3>
+                            <p class="text-slate-300 mb-4">Virtual Private Network. Crea un "túnel" cifrado a través de Internet.</p>
+                            
+                            <div class="grid grid-cols-2 gap-6 mb-4">
+                                <div class="bg-slate-900/80 p-4 rounded-lg border border-slate-700">
+                                    <h4 class="text-xl font-bold text-emerald-400 mb-1"><i class="fas fa-building mr-2"></i>Site-to-Site</h4>
+                                    <p class="text-sm text-slate-400">Router a Router. Transparente para usuarios.</p>
+                                </div>
+                                <div class="bg-slate-900/80 p-4 rounded-lg border border-slate-700">
+                                    <h4 class="text-xl font-bold text-purple-400 mb-1"><i class="fas fa-laptop-house mr-2"></i>Acceso Remoto</h4>
+                                    <p class="text-sm text-slate-400">PC a Router (Ej. Empleado en Home Office).</p>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="mt-6 w-full h-32 text-center text-slate-500 text-sm bg-slate-950 rounded overflow-hidden flex items-center justify-center">
-                            
+                        <div class="w-full h-32 glass-panel rounded-xl border border-slate-700 overflow-hidden relative flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1000&auto=format&fit=crop" alt="Seguridad Digital VPN" class="w-full h-full object-cover opacity-40 absolute inset-0">
+                            <div class="z-10 absolute flex items-center justify-center font-bold text-xl text-white drop-shadow-md">
+                                <i class="fas fa-lock mr-3 text-emerald-400 text-3xl"></i> Túnel VPN Cifrado
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -407,14 +412,14 @@
                             <p class="text-slate-400">Separa el plano de control (el cerebro) del plano de datos (los cables).</p>
                         </div>
                         <ul class="space-y-4">
-                            <li class="flex items-start bg-slate-800 p-4 rounded-lg">
+                            <li class="flex items-start bg-slate-800 p-4 rounded-lg border-l-2 border-indigo-500">
                                 <i class="fas fa-desktop text-2xl text-blue-400 mr-4 mt-1"></i>
                                 <div>
                                     <strong class="text-slate-200 block">Gestión Centralizada</strong>
-                                    <span class="text-sm text-slate-400">Se configuran todos los routers de las sucursales desde un único dashboard (Controlador).</span>
+                                    <span class="text-sm text-slate-400">Se configuran todos los routers de las sucursales desde un único dashboard (vManage).</span>
                                 </div>
                             </li>
-                            <li class="flex items-start bg-slate-800 p-4 rounded-lg">
+                            <li class="flex items-start bg-slate-800 p-4 rounded-lg border-l-2 border-emerald-500">
                                 <i class="fas fa-route text-2xl text-emerald-400 mr-4 mt-1"></i>
                                 <div>
                                     <strong class="text-slate-200 block">Enrutamiento por Aplicación</strong>
@@ -428,9 +433,8 @@
                     </div>
                     
                     <div class="w-full md:w-1/2 flex items-center justify-center">
-                        <div class="w-full h-full min-h-[300px] glass-panel rounded-2xl flex flex-col items-center justify-center border-2 border-indigo-500/50 relative overflow-hidden">
-                            <div class="absolute inset-0 bg-indigo-900/20 z-10 pointer-events-none"></div>
-                            
+                        <div class="w-full h-full min-h-[300px] glass-panel rounded-2xl flex items-center justify-center overflow-hidden border border-slate-700 relative shadow-lg">
+                            <img src="https://www.cisco.com/c/dam/en/us/td/i/400001-500000/460001-470000/462001-463000/462111.jpg" alt="Diagrama Oficial SD-WAN Cisco" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition duration-300">
                         </div>
                     </div>
                 </div>
@@ -444,10 +448,8 @@
             </h2>
             <p class="text-2xl text-slate-300 mb-10">Prepara tu smartphone para evaluar lo aprendido.</p>
             
-            <div class="bg-white p-2 rounded-3xl shadow-[0_0_30px_rgba(250,204,21,0.3)] inline-block mb-8">
-                <div class="w-48 h-48 bg-slate-200 rounded-2xl border-4 border-slate-300 flex items-center justify-center overflow-hidden">
-                    
-                </div>
+            <div class="w-48 h-48 rounded-2xl bg-slate-200 shadow-[0_0_30px_rgba(255,255,255,0.7)] border-4 border-slate-300 flex items-center justify-center overflow-hidden mb-8 relative">
+                <img id="qr-code-img" src="https://quickchart.io/qr?text=https://kahoot.it&size=250&margin=0" alt="Código QR Kahoot" class="w-full h-full object-contain mix-blend-multiply">
             </div>
             
             <div class="glass-panel px-8 py-4 rounded-full text-xl font-bold border border-yellow-500 text-yellow-400">
@@ -496,8 +498,8 @@
                                 <li><i class="fas fa-check-circle text-green-400 mr-2"></i> <strong>Requisito:</strong> Necesitan conectar las bases de datos de inventario y terminales de punto de venta (tarjetas) de forma completamente segura hacia la sede en México.</li>
                             </ul>
                         </div>
-                        <div class="w-full md:w-1/3 flex items-center justify-center bg-slate-900 rounded-xl overflow-hidden border border-slate-700">
-                            
+                        <div class="w-full md:w-1/3 flex items-center justify-center bg-slate-900 rounded-xl overflow-hidden border border-slate-700 h-48 relative shadow-inner">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Colombia_M%C3%A9xico_Locator2.png" alt="Mapa de México y Colombia" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition duration-300 mix-blend-screen">
                         </div>
                     </div>
                 </div>
@@ -582,7 +584,6 @@
     </div>
 
     <!-- Panel de Notas del Expositor (Guion) -->
-    <!-- Se utilizaron clases Tailwind (opacity-0, translate-y-10, pointer-events-none) en lugar de CSS personalizado -->
     <div id="speaker-notes" class="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-11/12 md:w-2/3 lg:w-1/2 bg-slate-800 border-2 border-blue-500 rounded-xl shadow-2xl z-40 p-6 transition-all duration-300 opacity-0 pointer-events-none translate-y-10">
         <div class="flex justify-between items-center border-b border-slate-600 pb-2 mb-4">
             <div class="flex items-center space-x-4">
