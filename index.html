@@ -228,6 +228,39 @@
                 <i class="fas fa-chevron-down text-4xl text-cyan-500"></i>
             </div>
         </div>
+        <!---Diapo nueva --->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 1" data-time="4 min" data-notes="Para entender cómo viajan los datos a largas distancias, debemos mirar el Modelo OSI. Las WAN operan casi exclusivamente en la Capa 1 y Capa 2. Además, usamos comunicación serial en lugar de paralela porque a largas distancias, mandar bits en paralelo causa problemas de sincronización.">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-blue-400"><i class="fas fa-layer-group mr-4"></i>WAN en el Modelo OSI y Capa 1</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="glass-panel p-8 rounded-2xl border-l-4 border-cyan-500 relative overflow-hidden">
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-4">Enfoque en Capas Inferiores</h3>
+                        <p class="text-slate-300 mb-4">La mayoría de los estándares WAN se centran en la <strong>Capa 1 (Física)</strong> y la <strong>Capa 2 (Enlace de Datos)</strong> del Modelo OSI.</p>
+                        <ul class="space-y-3 text-slate-400 text-sm">
+                            <li><i class="fas fa-microchip text-blue-400 w-5"></i> <strong>Protocolos Capa 1 (Fibra Óptica):</strong></li>
+                            <li class="ml-6 border-l border-slate-600 pl-4"><strong>SDH:</strong> Jerarquía Digital Sincrónica (Global).</li>
+                            <li class="ml-6 border-l border-slate-600 pl-4"><strong>SONET:</strong> Red Óptica Síncrona (Norteamérica).</li>
+                            <li class="ml-6 border-l border-slate-600 pl-4 text-emerald-400"><strong>DWDM:</strong> Multiplexación densa; permite enviar +80 canales de datos en una sola fibra usando diferentes colores de luz.</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-panel p-8 rounded-2xl border-l-4 border-purple-500">
+                        <h3 class="text-2xl font-bold text-purple-400 mb-4">Transmisión: Serial vs. Paralela</h3>
+                        <div class="space-y-4">
+                            <div class="bg-slate-800 p-4 rounded-lg">
+                                <h4 class="font-bold text-slate-200 mb-1"><i class="fas fa-arrow-right text-purple-400 mr-2"></i>Comunicación Serial</h4>
+                                <p class="text-sm text-slate-400">Transmite bits secuencialmente en un solo canal. Es el estándar para redes WAN porque mantiene la integridad a largas distancias.</p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-lg opacity-70">
+                                <h4 class="font-bold text-slate-200 mb-1"><i class="fas fa-exchange-alt text-slate-500 mr-2"></i>Comunicación Paralela</h4>
+                                <p class="text-sm text-slate-400">Transmite simultáneamente varios bits usando múltiples cables. Muy rápida, pero propensa a errores de sincronización. Limitada a menos de 8 metros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Diapositiva 8 -->
         <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 2" data-time="5 min" data-notes="Gracias Expositor 1. Históricamente, las WAN dependían de conexiones seriales lentas y costosas. Hoy, la evolución nos da dos grandes caminos: redes privadas dedicadas o la infraestructura pública (Internet).">
@@ -287,6 +320,34 @@
                             <li>Enruta paquetes basados en <strong>etiquetas (Labels)</strong> en lugar de largas direcciones IP.</li>
                             <li>Soporta IPv4, IPv6, Ethernet, y protocolos antiguos.</li>
                             <li><strong>Ventaja Principal:</strong> Excelentes garantías de Calidad de Servicio (QoS) para Voz y Video.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- Diapo nueva --->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 2" data-time="5 min" data-notes="Históricamente, hacíamos una llamada y se reservaba un cable físico solo para nosotros, eso es conmutación de circuitos. Era ineficiente. Hoy, cortamos los datos en pedacitos (paquetes) y todos comparten las mismas carreteras de red. Es más barato y flexible.">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-10 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Circuit-Switched vs. Packet-Switched</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-panel p-8 rounded-2xl hover:bg-slate-800 transition">
+                        <div class="text-5xl text-orange-400 mb-4 text-center"><i class="fas fa-phone-alt"></i></div>
+                        <h3 class="text-3xl font-bold text-orange-400 mb-4 text-center">Conmutación de Circuitos</h3>
+                        <p class="text-slate-300 text-base mb-4 text-center">Establece un canal o circuito físico dedicado <strong>antes</strong> de que los usuarios puedan comunicarse.</p>
+                        <ul class="list-none space-y-3 text-slate-400 mt-6">
+                            <li><i class="fas fa-times-circle text-red-400 w-5"></i> <strong>Ineficiente:</strong> La capacidad reservada se desperdicia si no hay datos fluyendo.</li>
+                            <li><i class="fas fa-history text-slate-500 w-5"></i> <strong>Tecnologías (Legado):</strong> PSTN (Telefonía pública) y Red Digital de Servicios Integrados (ISDN).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glass-panel p-8 rounded-2xl hover:bg-slate-800 transition border-t-4 border-emerald-500">
+                        <div class="text-5xl text-emerald-400 mb-4 text-center"><i class="fas fa-cubes"></i></div>
+                        <h3 class="text-3xl font-bold text-emerald-400 mb-4 text-center">Conmutación de Paquetes</h3>
+                        <p class="text-slate-300 text-base mb-4 text-center">Divide los datos en paquetes enrutados a través de una <strong>red compartida</strong>. No requiere circuito dedicado.</p>
+                        <ul class="list-none space-y-3 text-slate-400 mt-6">
+                            <li><i class="fas fa-check-circle text-emerald-400 w-5"></i> <strong>Flexible y Económico:</strong> Permite que muchos nodos se comuniquen por el mismo canal.</li>
+                            <li><i class="fas fa-network-wired text-blue-400 w-5"></i> <strong>Tecnologías:</strong> Ethernet WAN, MPLS, y las heredadas Frame Relay / ATM.</li>
                         </ul>
                     </div>
                 </div>
@@ -379,6 +440,51 @@
                         </div>
 
                     </div>
+                </div>
+            </div>
+        </div>
+        <!--- Diapo nueva --->
+        <div class="slide hidden-slide bg-slate-900 flex flex-col justify-center p-12" data-speaker="Expositor 2" data-time="4 min" data-notes="Para conectar nuestra empresa a internet o a redes públicas, debemos pensar qué pasa si se corta un cable o si el proveedor se cae. Desde una conexión simple y barata, hasta una múltiple-doble a prueba de balas, el diseño dependerá del presupuesto.">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-4xl md:text-5xl font-bold mb-10 text-blue-400"><i class="fas fa-project-diagram mr-4"></i>Opciones de Conectividad ISP</h2>
+                <p class="text-lg text-slate-300 mb-8">El diseño de la conexión hacia el proveedor de servicios determina la tolerancia a fallos de la red empresarial.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                    
+                    <div class="glass-panel p-6 rounded-xl border-t-2 border-slate-500">
+                        <h3 class="text-xl font-bold text-white mb-2">Conexión Simple</h3>
+                        <div class="text-cyan-400 my-4 text-2xl flex justify-center items-center gap-2">
+                            <i class="fas fa-building text-slate-400"></i> <i class="fas fa-minus"></i> <i class="fas fa-cloud"></i>
+                        </div>
+                        <p class="text-sm text-slate-400">1 Enlace, 1 ISP. Cero redundancia. Es la opción más barata pero si el enlace falla, se pierde el acceso.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl border-t-2 border-blue-500">
+                        <h3 class="text-xl font-bold text-white mb-2">Conexión Doble</h3>
+                        <div class="text-cyan-400 my-4 text-2xl flex justify-center items-center gap-2 relative">
+                            <i class="fas fa-building text-slate-400"></i> <i class="fas fa-equals"></i> <i class="fas fa-cloud"></i>
+                        </div>
+                        <p class="text-sm text-slate-400">2 Enlaces, 1 ISP. Permite balanceo de carga. Falla si el ISP completo sufre una interrupción.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl border-t-2 border-purple-500">
+                        <h3 class="text-xl font-bold text-white mb-2">Conexión Múltiple</h3>
+                        <div class="text-purple-400 my-4 text-2xl flex justify-center items-center gap-2">
+                            <i class="fas fa-building text-slate-400"></i> <i class="fas fa-less-than"></i> <i class="fas fa-cloud"></i><i class="fas fa-cloud"></i>
+                        </div>
+                        <p class="text-sm text-slate-400">1 Enlace por ISP, a 2 ISPs diferentes. Mayor redundancia, protege contra la caída de un proveedor entero.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl border-t-2 border-emerald-500">
+                        <h3 class="text-xl font-bold text-white mb-2">Múltiple-Doble</h3>
+                        <div class="text-emerald-400 my-4 text-2xl flex justify-center items-center gap-2">
+                            <i class="fas fa-building text-slate-400"></i> 
+                            <div class="flex flex-col gap-1 text-sm"><i class="fas fa-equals"></i><i class="fas fa-equals"></i></div>
+                            <i class="fas fa-cloud"></i><i class="fas fa-cloud"></i>
+                        </div>
+                        <p class="text-sm text-slate-400">2 Enlaces por ISP, a 2 ISPs diferentes. La más costosa y resistente. Tolerancia total a fallos de enlaces y de ISP.</p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -562,7 +668,7 @@
     <!-- Barra de Controles (Abajo) -->
     <div class="bg-slate-950 border-t border-slate-800 p-4 flex justify-between items-center z-50 relative">
         <div class="text-slate-400 text-sm font-semibold flex items-center gap-4">
-            <span id="slide-counter">Diapositiva 1 / 18</span>
+            <span id="slide-counter">Diapositiva 1 / 21</span>
             <button id="toggle-notes" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded text-xs transition duration-300 font-bold">
                 <i class="fas fa-comment-dots mr-1"></i> Mostrar Guion
             </button>
